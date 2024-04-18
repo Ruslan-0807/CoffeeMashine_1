@@ -3,10 +3,14 @@ package add.coffeeMashine;
 import add.ingradients.Coffee;
 import add.ingradients.Milk;
 import add.ingradients.Water;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class CoffeeMashine {
+    @Autowired
     private Water water;
+    @Autowired
     private Milk milk;
+    @Autowired
     private Coffee coffee;
 
     public void setWater(Water water) {
